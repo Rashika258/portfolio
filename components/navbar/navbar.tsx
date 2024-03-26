@@ -57,7 +57,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
   return (
-    <NavigationMenu className="w-full max-w-full items-center justify-between">
+    <NavigationMenu className="w-full max-w-full items-center justify-between p-4">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
