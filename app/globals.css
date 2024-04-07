@@ -110,11 +110,23 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 }
 
 
-.gradient__hero__wrapper {
-
-  /* background-color: #010115;
-  opacity: 0.8;
-  background-image: radial-gradient(#904cda 0.5px, #e5e5f7 0.5px);
-  background-size: 10px 10px; */
+.gradient__hero__wrapper div {
+  transition: opacity 0.5s ease-in-out;
 }
 
+
+.lets__talk__gradient__btn__wrapper {
+   
+
+   /* background: linear-gradient(to right, rgba(106,17,203,0.5), rgba(37,117,252,0.5));
+   text-align: center;
+   padding: 13px 20px;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text; */
+   /* -webkit-text-fill-color: rgba(255,255,255,0.001); */
+   /* transition: 256ms all;
+   position: relative;
+   cursor: pointer;
+   border: 1px solid  rgba(106,17,203,0.5); */
+}

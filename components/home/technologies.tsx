@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image";
 import * as React from "react";
+import { motion } from "framer-motion";
 
 export interface ITechnologiesProps {}
 
@@ -44,7 +47,6 @@ export function Technologies(props: ITechnologiesProps) {
   );
 }
 
-// ImageComponent renders a single Image component with given data
 const ImageComponent: React.FC<{
   src: string;
   alt: string;
@@ -52,18 +54,12 @@ const ImageComponent: React.FC<{
   height: number;
 }> = ({ src, alt, width, height }) => {
   return (
-    <>
-      <div className="inline-flex  animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-10  py-4 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-        {/* <div className={"bg-black border rounded-xl p-4 flex items-center justify-center"}> */}
-        <Image
-          className={""}
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-        />
-        {/* </div> */}
-      </div>
-    </>
+    <motion.div
+      className="inline-flex  hover:animate-shimmer items-center justify-center rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-10  py-4 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <Image className={""} src={src} alt={alt} width={width} height={height} />
+    </motion.div>
   );
 };

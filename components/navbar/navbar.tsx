@@ -61,8 +61,8 @@ export function Navbar() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className="logo__font text-3xl text-yellowcolor">
-              Rashika
+            <NavigationMenuLink className="logo__font text-3xl  font-bold text-yellowcolor">
+              Rashika Suresh
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -84,29 +84,28 @@ export function Navbar() {
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contact us
+              {"Let's talk"}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-          
-    
-    </NavigationMenuItem>
-
+        <NavigationMenuItem></NavigationMenuItem>
       </NavigationMenuList>
-    
-    <NavigationMenuList>
-    <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className=" ">
-              Contact us
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        {/* <ModeToggle /> */}
+
+      <NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuLink className=" font-bold">
         
-    </NavigationMenuList>
+            <button className="p-[1px] relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
+        <div className="px-8 py-2  bg-black rounded-full  relative group transition duration-200 text-white hover:bg-transparent">
+          {"Let's talk"}
+        </div>
+      </button>
+           
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+      </NavigationMenuList>
     </NavigationMenu>
   );
 }

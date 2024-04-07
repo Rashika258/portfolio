@@ -27,10 +27,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-<link rel="manifest" href="/site.webmanifest"></link>
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/site.webmanifest"></link>
       <body
         className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
@@ -40,10 +54,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-         
-         
-          <ParticleCanvas />
-
+          {/* <ParticleCanvas /> */}
 
           {children}
         </ThemeProvider>
