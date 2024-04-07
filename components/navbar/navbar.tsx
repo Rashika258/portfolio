@@ -57,7 +57,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
   return (
-    <NavigationMenu className="w-full max-w-full items-center justify-between p-4">
+    <NavigationMenu className="w-full max-w-full min-w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 items-center justify-between">
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
@@ -104,7 +104,7 @@ export function Navbar() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-  
+        {/* <ModeToggle /> */}
         
     </NavigationMenuList>
     </NavigationMenu>

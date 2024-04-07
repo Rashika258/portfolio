@@ -32,7 +32,7 @@ export default function RootLayout({
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
 <link rel="manifest" href="/site.webmanifest"></link>
       <body
-        className={`${montserrat.className} ${sofia.variable} h-full w-full overflow-hidden`}
+        className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"
@@ -40,10 +40,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
+         
+         
           <ParticleCanvas />
-          <ModeToggle />
-          <Technologies />
+
 
           {children}
         </ThemeProvider>

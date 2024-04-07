@@ -5,8 +5,8 @@
 @layer base {
   :root {
     /* 050609 */
-    --background:225, 29%, 3%;
-    --foreground: 0, 24%, 94%;
+    --foreground: 225, 29%, 3%;
+    --background: 0, 24%, 94%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -35,12 +35,12 @@
 
     --radius: 0.5rem;
 
-    --yellow_color:42, 100%, 50%;
+    --yellow_color: 42, 100%, 50%;
   }
 
   .dark {
     /* 050609 */
-        --background:225, 29%, 3%;
+    --background: 225, 29%, 3%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -67,14 +67,14 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    
-    --yellow_color:42, 100%, 50%;
+
+    --yellow_color: 42, 100%, 50%;
   }
 }
 
-.logo__font{
+.logo__font {
   font-family: var(--sofia);
-  color: hsl(42, 100%, 50%)
+  color: hsl(42, 100%, 50%);
 }
 
 @layer base {
@@ -85,3 +85,36 @@
     @apply bg-background text-foreground;
   }
 }
+
+.skills__image__gradient {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(44, 9, 121, 1) 35%,
+    rgba(132, 24, 208, 1) 100%
+  );
+}
+
+.gradient__text {
+
+  background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: linear-gradient(to right, rgba(106,17,203,0.5), rgba(37,117,252,0.5)); */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+}
+
+
+.gradient__hero__wrapper {
+
+  /* background-color: #010115;
+  opacity: 0.8;
+  background-image: radial-gradient(#904cda 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px; */
+}
+
