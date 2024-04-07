@@ -56,7 +56,7 @@ return (
       </div>
     </div>
 
-    <div className="py-8 gradient__hero__wrapper">
+    <div className="py-8 ">
       <div className="text-4xl  font-bold ">
         <div className="w-full min-w-full flex items-center text-[#DAD5D5] justify-center p-2">{firstHeroTextArray[index]}</div>
         

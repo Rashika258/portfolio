@@ -1,9 +1,9 @@
 import HeroContent from "@/components/home/herocontent";
-import { ModeToggle } from "@/components/home/mode-toggle";
-import StarsCanvas from "@/components/home/StarBackground";
+
 import { Technologies } from "@/components/home/technologies";
 import { Navbar } from "@/components/navbar/navbar";
 import Image from "next/image";
+import { Projects } from "./projects/page";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
         </div> */}
         <HeroContent />
         <Technologies />
+        <Projects />
       </div>
     </div>
   );

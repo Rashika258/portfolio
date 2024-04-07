@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import * as React from "react";
 import { motion } from "framer-motion";
+import { MovingBorderButton } from "../moving-border-button";
 
 export interface ITechnologiesProps {}
 
@@ -27,21 +28,23 @@ export function Technologies(props: ITechnologiesProps) {
     { src: "/css.svg", alt: "CSS3", width: 70, height: 70 },
   ];
   return (
-    <div className={"grid grid-rows-3 gap-y-4 items-center justify-center"}>
-      <div className={"grid grid-cols-4 gap-4 "}>
-        {imagesFirstRowData.map((imageData, index) => (
-          <ImageComponent key={index} {...imageData} />
-        ))}
-      </div>
-      <div className={"grid grid-cols-4 gap-4 "}>
-        {imagesSecondRowData.map((imageData, index) => (
-          <ImageComponent key={index} {...imageData} />
-        ))}
-      </div>
-      <div className={"grid grid-cols-4 gap-4 "}>
-        {imagesThirdRowData.map((imageData, index) => (
-          <ImageComponent key={index} {...imageData} />
-        ))}
+    <div className={"flex px-8   w-full items-center justify-center "}>
+      <div className="grid grid-rows-3 gap-y-8 items-center justify-center">
+        <div className={"grid grid-cols-4 gap-8 "}>
+          {imagesFirstRowData.map((imageData, index) => (
+            <ImageComponent key={index} {...imageData} />
+          ))}
+        </div>
+        <div className={"grid grid-cols-4 gap-8 "}>
+          {imagesSecondRowData.map((imageData, index) => (
+            <ImageComponent key={index} {...imageData} />
+          ))}
+        </div>
+        <div className={"grid grid-cols-4 gap-8 "}>
+          {imagesThirdRowData.map((imageData, index) => (
+            <ImageComponent key={index} {...imageData} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat, Sofia } from "next/font/google";
 import "./globals.css";
 import ParticleCanvas from "@/components/home/Background";
-import { Navbar } from "@/components/navbar/navbar";
-import { ThemeProvider } from "@/components/providers/theme-provicer";
-import { ModeToggle } from "@/components/home/mode-toggle";
+
 import { Technologies } from "@/components/home/technologies";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -48,16 +46,9 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {/* <ParticleCanvas /> */}
+        {/* <ParticleCanvas /> */}
 
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
