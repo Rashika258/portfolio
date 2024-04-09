@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-"use client";
 
+"use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -42,13 +41,11 @@ const HeroContent = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log("index============================", index);
-
   return (
     <div className=" w-full h-[700px] min-h-[700px] flex relative pt-16 px-20 pb-8 ">
       <div className="flex items-center justify-center">
         <div className="flex ">
-          <img width={300} height={300} src={"/avatar_2.png"} alt="avatar" />
+          <Image width={300} height={300} src={"/avatar_2.png"} alt="avatar" />
         </div>
       </div>
       <div className=" py-8 px-16 flex flex-col items-center content-center justify-center w-[calc(100%-300px)]">
@@ -76,7 +73,6 @@ const HeroContent = () => {
           {`I'm a seasoned Full Stack Software Engineer renowned for my ability to engineer dynamic solutions that transcend industry boundaries. With a meticulous focus on performance optimization, user experience enhancement, and security fortification, I excel in crafting robust digital experiences that leave a lasting impact.`}
         </div>
       </div>
-      
     </div>
   );
 };

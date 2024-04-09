@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat, Sofia } from "next/font/google";
+import { Inter,  Sofia } from "next/font/google";
 import "./globals.css";
-import ParticleCanvas from "@/components/home/Background";
 
-import { Technologies } from "@/components/home/technologies";
 
 const montserrat = Inter({ subsets: ["latin"] });
 

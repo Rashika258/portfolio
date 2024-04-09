@@ -1,12 +1,13 @@
+"use client"
+
 import HeroContent from "@/components/home/herocontent";
 
 import { Technologies } from "@/components/home/technologies";
-import { Navbar } from "@/components/navbar/navbar";
-import Image from "next/image";
+import { Navbar } from "@/components/ui/navbar";
 import { Projects } from "./projects/page";
 import { About } from "./about/page";
-import Footer from "@/components/footer/footer";
-import { Lamp } from "./projects/_components/lamp";
+import Footer from "@/components/ui/footer";
+
 
 export default function Home() {
   return (
