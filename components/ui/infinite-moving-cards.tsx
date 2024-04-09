@@ -101,10 +101,16 @@ export const InfiniteMovingCards = ({
             key={item.id}
           >
             <div className="flex flex-col items-center">
+              
               <motion.div
                 className="w-full h-52  flex relative items-center justify-center"
-                whileHover={{ scale: 1.1 }}
+                initial={{ opacity: 0.6 }}
+                whileHover={{
+                  scale: 1.2,
+                  transition: { duration: 1 },
+                }}
                 whileTap={{ scale: 0.9 }}
+                whileInView={{ opacity: 1 }}
               >
                 <Link href={item?.liveLink} target="blank">
                   <Image
@@ -133,7 +139,7 @@ export const InfiniteMovingCards = ({
 
                 <div className="flex w-full py-2 items-center ">
                   <Link href={item?.githubLink} target="blank">
-                    <span className=" text-sm mr-10 hover:text-gray-500 leading-[1.6] text-gray-100  underline font-normal">
+                    <span  className=" text-sm mr-10 hover:text-gray-500 leading-[1.6] text-gray-100  underline font-normal">
                       Github
                     </span>
                   </Link>
