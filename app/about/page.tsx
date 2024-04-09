@@ -28,7 +28,7 @@ export function About(props: IAboutProps) {
       <div className="flex w-full items-center justify-center flex-col">
         <HeaderText text="My story" />
 
-        <div className="pt-4   pb-16">Peek behind the curtain of my life.</div>
+        <div className="pt-4  w-full items-center justify-center flex  pb-16">Peek behind the curtain of my life.</div>
         <div className="w-full grid grid-cols-2">
           <div className="relative min-w-[300px] min-h-[300px]">
             <Image
