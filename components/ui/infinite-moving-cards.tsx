@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 export const InfiniteMovingCards = ({
   items,
@@ -87,8 +87,8 @@ export const InfiniteMovingCards = ({
         ref={scrollerRef}
         className={cn(
           " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-            start && "animate-scroll ",
-            pauseOnHover && "hover:[animation-play-state:paused]"
+          start && "animate-scroll ",
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
@@ -101,17 +101,18 @@ export const InfiniteMovingCards = ({
             key={item.id}
           >
             <div className="flex flex-col items-center">
-              <motion.div className="w-full h-52  flex relative items-center justify-center"
-              
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}>
-              <Link href={item?.liveLink} target="blank">
-                <Image
-                  src={item?.imageUrl}
-                  alt={item.title}
-                  layout="fill"
-                  objectFit="contain"
-                />
+              <motion.div
+                className="w-full h-52  flex relative items-center justify-center"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Link href={item?.liveLink} target="blank">
+                  <Image
+                    src={item?.imageUrl}
+                    alt={item.title}
+                    layout="fill"
+                    objectFit="contain"
+                  />
                 </Link>
               </motion.div>
               <blockquote className="flex w-full flex-col items-start justify-start py-4">

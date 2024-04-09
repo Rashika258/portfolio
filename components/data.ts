@@ -37,7 +37,7 @@ export const projects = [
     githubLink: "https://github.com/Rashika258/MERN-Ecommerce",
     title: "E commerce",
     description: "Built using React, Expressjs, MongoSB and Nodejs",
-    imageUrl: "/ecommerce.svg",
+    imageUrl: "/e_commerce.svg",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const projects = [
     githubLink: "https://github.com/Rashika258/whatsapp-fullstack",
     title: "Whatsapp Clone",
     description: "Built using React, Expressjs, Firebase and Nodejs",
-    imageUrl: "/whatsapp.png",
+    imageUrl: "/whatsapp.jpg",
   },
 
   {
@@ -72,7 +72,7 @@ export const projects = [
     liveLink:
       "https://github.com/Rashika258/restaurant-system",
     githubLink: "https://github.com/Rashika258/restaurant-system",
-    title: "Cabinet Assembler",
+    title: "Restaurant App",
     description: "Built using React",
     imageUrl: "/restaurant.jpg",
   },
@@ -103,7 +103,7 @@ export const projects = [
       "https://github.com/Rashika258/Books4U",
       title: "Books4U",
       description: "Built using React",
-      imageUrl: "/books.png",
+      imageUrl: "/books.jpg",
   },
   {
     id: 13,
@@ -119,7 +119,7 @@ export const projects = [
     githubLink: "https://github.com/Rashika258/Oluber-VehicleManagementSystem",
     title: "Oluber - Vehicle Management System",
     description: "Built using PHP, MySQL, HTML and CSS",
-    imageUrl: "/vehicle_cars.png",
+    imageUrl: "/vehicle_cars.jpg",
   },
 
   {
@@ -128,7 +128,7 @@ export const projects = [
     githubLink: "https://github.com/Rashika258/ExpenseTracker",
     title: "Expense Tracker",
     description: "Built using React, HTML, CSS and Javascript",
-    imageUrl: "/expense_tracker.png",
+    imageUrl: "/expense_tracker.jpg",
   },
   {
     id: 16,

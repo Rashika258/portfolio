@@ -3,11 +3,9 @@ import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-interface LampProps {
-    children: ReactNode
-}
 
-export function Lamp({children} :LampProps ) {
+
+export function Lamp( ) {
   return (
     <LampContainer>
       <motion.div
@@ -20,7 +18,7 @@ export function Lamp({children} :LampProps ) {
         }}
         className="mt-32 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        {children}
+       
       </motion.div>
     </LampContainer>
   );
