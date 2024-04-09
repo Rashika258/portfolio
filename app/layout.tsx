@@ -5,7 +5,7 @@ import ParticleCanvas from "@/components/home/Background";
 
 import { Technologies } from "@/components/home/technologies";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia({
   weight: ["400"],
