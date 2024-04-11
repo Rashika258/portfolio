@@ -16,7 +16,7 @@ export default function About() {
           <p className="font-normal text-sm">25, August, 2000</p>
         </DirectionAwareHoverCard>
       </div>
-      <div className="pl-20 py-10 flex flex-col items-center">
+      <div className="pl-20 py-10 flex flex-col items-center justify-center">
         <HeaderText text="My story" />
 
         <TextGenerateEffect words={aboutWords} className="w-full" />
