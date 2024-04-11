@@ -13,16 +13,10 @@ import ParticleCanvas from "@/components/home/Background";
 
 export default function Home() {
   return (
-    <div className="pt-[65px] pb-[80px] h-full flex flex-col">
+    <div className="mt-[65px] mb-[80px] h-[calc(100vh-145px)] overflow-y-auto flex flex-col">
       <ParticleCanvas />
       <HeroContent />
-      <Skills />
-      <About />
-      <Projects />
-      <Experience />
-      <Education />
-      <Contact />
-      <Footer />
+
     </div>
   );
 }

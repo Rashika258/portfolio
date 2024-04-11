@@ -8,33 +8,28 @@ import * as React from "react";
 
 export default function About() {
   return (
-    <div className="relative flex flex-col px-20 py-20">
-      <div className="flex w-full items-center justify-center flex-col">
+    <div className="relative flex h-[calc(100vh-145px)] w-full  px-20 mt-[65px] mb-[80px] overflow-y-auto">
+      <div className="relative min-w-[300px] min-h-[300px] ">
+        <Image
+          src={"/about_bg.svg"}
+          alt="about-bg"
+          layout="fill"
+          objectFit="contain"
+        />
+      </div>
+      <div className="pl-20 py-4 flex flex-col items-center justify-between">
         <HeaderText text="My story" />
 
-        <div className="pt-4  w-full items-center justify-center flex  pb-16">
+        <TextGenerateEffect words={aboutWords}  className="w-full"/>
+        <div className="py-2  w-full items-center justify-start flex ">
           Peek behind the curtain of my life.
         </div>
-        <div className="w-full grid grid-cols-2">
-          <div className="relative min-w-[300px] min-h-[300px]">
-            <Image
-              src={"/about_bg.svg"}
-              alt="about-bg"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-          <div className="px-20 py-4">
-            <div>
-              <TextGenerateEffect words={aboutWords} />
-            </div>
-            <div
-              className="
-            flex text-left py-10"
-            >
-              {aboutContent}
-            </div>
-          </div>
+
+        <div
+          className="
+            flex w-full py-4 text-gray-400 text-base text-justify"
+        >
+          {aboutContent}
         </div>
       </div>
     </div>
