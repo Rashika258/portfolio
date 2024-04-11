@@ -4,7 +4,7 @@ import Image from "next/image";
 import * as React from "react";
 import { motion } from "framer-motion";
 
-export function Skills() {
+export default function Skills() {
   const imagesFirstRowData = [
     { src: "/javascript-logo.svg", alt: "JavaScript", width: 70, height: 70 },
     { src: "/mongodb_1.svg", alt: "MongoDB", width: 70, height: 70 },

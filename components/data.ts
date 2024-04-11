@@ -1,3 +1,26 @@
+export const navItems = [
+  {
+    id:1,
+    navItem:'Home',
+    navLink:'/home'
+  },
+  {
+    id:2,
+    navItem:'About',
+    navLink:'/about'
+  },
+  {
+    id:3,
+    navItem:'Skills',
+    navLink:'/skills'
+  },
+  {
+    id:4,
+    navItem:'Projects',
+    navLink:'/projects'
+  },
+]
+
 export const projects = [
   {
     id: 1,

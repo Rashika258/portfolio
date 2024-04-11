@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/3d-card-effect";
 import HeaderText from "@/components/ui/header-text";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import {
   VerticalTimeline,

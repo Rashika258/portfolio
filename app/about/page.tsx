@@ -7,7 +7,7 @@ import * as React from "react";
 
 export interface IAboutProps {}
 
-export function About(props: IAboutProps) {
+export default function About(props: IAboutProps) {
   const words = `Hey there! I'm Rashika!`;
   const aboutContent = `A tech wizard with a knack for turning complex code into sleek solutions. With over 2 years of fulltime and 2 years of freelancing experience of coding adventures under my belt, I've mastered both frontend and backend technologies, bringing ideas to life.
   

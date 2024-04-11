@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import HeaderText from "@/components/ui/header-text";
 import { projects } from "@/components/data";
 
-export function Projects() {
+export default function Projects() {
   return (
     <div className="relative flex w-full p-20">
       <div className="absolute w-full inset-0 mt-[-100px]">
