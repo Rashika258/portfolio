@@ -1,41 +1,15 @@
-
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { firstHeroSubTextArray, firstHeroTextArray } from "../data";
 
 const HeroContent = () => {
-  const firstHeroTextArray = [
-    "Implementing innovative solutions for",
-    "Creating scalable architectures for",
-    "Developing dynamic applications for",
-    "Designing intuitive interfaces for",
-    "Optimizing performance for",
-    "Securing networks for",
-    "Integrating cutting-edge technologies for",
-    "Collaborating with teams for",
-    "Troubleshooting issues for",
-    "Enhancing accessibility for",
-  ];
-
-  const firstHeroSubTextArray = [
-    " seamless user experiences.",
-    " efficient data management.",
-    " diverse platforms.",
-    " optimal user interaction.",
-    " high-traffic websites.",
-    " robust cybersecurity measures.",
-    " enhanced functionality.",
-    " streamlined project delivery.",
-    " uninterrupted system operations.",
-    " inclusive user engagement.",
-  ];
-
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) =>
-        prevIndex === firstHeroTextArray.length - 1 ? 0 : prevIndex + 1
+        prevIndex === firstHeroTextArray?.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
     return () => clearInterval(interval);

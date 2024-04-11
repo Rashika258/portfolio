@@ -34,6 +34,54 @@ Ready to collaborate on something extraordinary? Let's chat and [Your Call to Ac
 
 This revamped "About Me" section adds a dash of personality and energy, inviting visitors to engage with your story and explore your capabilities further.`;
 
+export const firstHeroTextArray = [
+  "Implementing innovative solutions for",
+  "Creating scalable architectures for",
+  "Developing dynamic applications for",
+  "Designing intuitive interfaces for",
+  "Optimizing performance for",
+  "Securing networks for",
+  "Integrating cutting-edge technologies for",
+  "Collaborating with teams for",
+  "Troubleshooting issues for",
+  "Enhancing accessibility for",
+];
+
+export const firstHeroSubTextArray = [
+  " seamless user experiences.",
+  " efficient data management.",
+  " diverse platforms.",
+  " optimal user interaction.",
+  " high-traffic websites.",
+  " robust cybersecurity measures.",
+  " enhanced functionality.",
+  " streamlined project delivery.",
+  " uninterrupted system operations.",
+  " inclusive user engagement.",
+];
+
+export const footerSocialLinks = [
+  {
+    id: 1,
+    socialIcon:'/github.svg',
+    socialName:'github',
+    socialLink:'https://github.com/Rashika258'
+  },
+  {
+    id: 2,
+    socialIcon:'/linkedin.svg',
+    socialName:'linkedin',
+    socialLink:'https://www.linkedin.com/in/rashika-suresh/'
+  },
+  {
+    id: 3,
+    socialIcon:'/twitter.svg',
+    socialName:'twitter',
+    socialLink:'https://twitter.com/Rashika16735509'
+  },
+]
+
+
 export const projects = [
   {
     id: 1,

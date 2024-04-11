@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sofia } from "next/font/google";
 import "./globals.css";
-import ParticleCanvas from "@/components/home/Background";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 
@@ -46,7 +45,6 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
-        <ParticleCanvas />
         <div className="flex flex-col h-full w-full overflow-x-hidden">
           <Navbar />
           {children}
