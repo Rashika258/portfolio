@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="h-[80px] footer__wrapper  z-50  px-10 bottom-0 flex items-center justify-between fixed w-full">
+    <footer className="h-[80px] footer__wrapper backdrop-blur-md z-50  px-10 bottom-0 flex items-center justify-between fixed w-full">
       <div className="flex ">
         {footerSocialLinks &&
           footerSocialLinks?.length > 0 &&

@@ -32,7 +32,7 @@ export default function Experience() {
         {`Charting the Map of Experience: Navigating Through Life's Terrain`}
       </div>
       <div className="experience__wrapper py-10">
-        <VerticalTimeline lineColor={'#eeeeee'}>
+        <VerticalTimeline lineColor={"#eeeeee"}>
           {experiences?.map((experience, idx) => {
             return (
               <VerticalTimelineElement
@@ -65,20 +65,16 @@ export default function Experience() {
                   />
                 }
               >
-            
                 <ThreeDCard experience={experience} />
-                  <div className="text-gray-400 text-sm invisible">
-                    <ul className="list-disc">
-                      {experience?.workDescription &&
-                        experience?.workDescription?.length > 0 &&
-                        experience?.workDescription?.map((item, idx) => {
-                          return <li key={idx}>{item}</li>;
-                        })}
-                    </ul>
-                  </div>
-              
-            
-             
+                <div className="text-gray-400 text-sm invisible">
+                  <ul className="list-disc">
+                    {experience?.workDescription &&
+                      experience?.workDescription?.length > 0 &&
+                      experience?.workDescription?.map((item, idx) => {
+                        return <li key={idx}>{item}</li>;
+                      })}
+                  </ul>
+                </div>
               </VerticalTimelineElement>
             );
           })}
