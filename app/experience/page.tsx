@@ -32,8 +32,8 @@ export default function Experience() {
       <div className="pt-4 pb-16">
         {`Charting the Map of Experience: Navigating Through Life's Terrain`}
       </div>
-      <div>
-        <VerticalTimeline>
+      <div className="experience__wrapper py-10">
+        <VerticalTimeline lineColor={'#eeeeee'}>
           {experiences?.map((experience, idx) => {
             return (
               <VerticalTimelineElement
@@ -49,7 +49,7 @@ export default function Experience() {
                 }}
                 date={experience?.date}
                 iconStyle={{
-                  background: "#fff",
+                  background: "#6012b3",
                   color: "#fff",
                   display: "flex",
                   alignItems: "center",
