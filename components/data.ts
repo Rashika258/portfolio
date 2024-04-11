@@ -60,8 +60,7 @@ export const projects = [
   },
   {
     id: 8,
-    liveLink:
-      "https://melodic-sunflower-8e9165.netlify.app/",
+    liveLink: "https://melodic-sunflower-8e9165.netlify.app/",
     githubLink: "https://github.com/Rashika258/cabinet-assembler",
     title: "Cabinet Assembler",
     description: "Built using React",
@@ -69,8 +68,7 @@ export const projects = [
   },
   {
     id: 9,
-    liveLink:
-      "https://github.com/Rashika258/restaurant-system",
+    liveLink: "https://github.com/Rashika258/restaurant-system",
     githubLink: "https://github.com/Rashika258/restaurant-system",
     title: "Restaurant App",
     description: "Built using React",
@@ -91,19 +89,18 @@ export const projects = [
     liveLink: "https://github.com/Rashika258/WTANeumorphicSimpleCalculator",
     githubLink:
       "https://rashika258.github.io/WTANeumorphicSimpleCalculator/home.html",
-     
-      title: "Neumorphic Calculator",
-      description: "Built using HTML and CSS",
-      imageUrl: "/calculator.png",
+
+    title: "Neumorphic Calculator",
+    description: "Built using HTML and CSS",
+    imageUrl: "/calculator.png",
   },
   {
     id: 12,
     liveLink: "https://github.com/Rashika258/Books4U",
-    githubLink:
-      "https://github.com/Rashika258/Books4U",
-      title: "Books4U",
-      description: "Built using React",
-      imageUrl: "/books.jpg",
+    githubLink: "https://github.com/Rashika258/Books4U",
+    title: "Books4U",
+    description: "Built using React",
+    imageUrl: "/books.jpg",
   },
   {
     id: 13,
@@ -153,19 +150,17 @@ export const projects = [
       "https://653d0b3f2de5721db9e6f08f--monumental-heliotrope-500cd0.netlify.app/",
     githubLink:
       "https://github.com/Rashika258/RestaurantAppWithReactAndFirebase",
-      title: "Restaurant App",
-      description: "Built using React, Express and Firebase",
-      imageUrl: "/restaurant.png",
+    title: "Restaurant App",
+    description: "Built using React, Express and Firebase",
+    imageUrl: "/restaurant.png",
   },
   {
     id: 19,
-    liveLink:
-      "https://github.com/Rashika258/frontend-design",
-    githubLink:
-      "https://github.com/Rashika258/frontend-design",
-      title: "Simple Layout",
-      description: "Built using React",
-      imageUrl: "/frontend-design.png",
+    liveLink: "https://github.com/Rashika258/frontend-design",
+    githubLink: "https://github.com/Rashika258/frontend-design",
+    title: "Simple Layout",
+    description: "Built using React",
+    imageUrl: "/frontend-design.png",
   },
   {
     id: 20,
@@ -175,5 +170,40 @@ export const projects = [
     title: "Inshorts Clone App",
     description: "Built using React, Express and Firebase",
     imageUrl: "/restaurant.png",
+  },
+];
+
+export const experiences= [
+  {
+    id: 1,
+    companyName: "Sangoma Technologies",
+    title: "Software Developer",
+    workDescription: [],
+    timeLineIcon: "/sangoma.png",
+    date:"2024 - Present"
+  },
+  {
+    id: 2,
+    companyName: "Hummingwave Technologies",
+    title: "Software Development Engineer I",
+    workDescription: [
+      `Developing user interfaces using React, NextJS for Frontend, NodeJS for the Javascript runtime environment and Rest API's, Ensuring the devloped applications are optimized for  performance, accessibility, and responsiveness across all
+      devices and browsers along with cross-browser compatibility.`,
+      `Building server side of web applications, handling data storage, processing user inputs, and implementing business logic using MongoDB. `,
+    ],
+    timeLineIcon: "/hummingwave1.jpeg",
+    date:"2022 - 2024"
+  },
+  {
+    id: 3,
+    companyName: "Gnani.ai",
+    title: "Software Intern",
+    workDescription: [
+      "Creating, managing and querying MongoDB collection, indexes and queries.",
+      "Writing scripts in python to automate, manually executed processes.",
+      "Identified areas for improvemnet in the production environment, analyzed system performance and made improvements to software applications, infrastructure and processes.",
+    ],
+    timeLineIcon: "/gnani.png",
+    date:"2022 - 2022"
   },
 ];

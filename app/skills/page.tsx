@@ -4,7 +4,7 @@ import Image from "next/image";
 import * as React from "react";
 import { motion } from "framer-motion";
 
-export function Technologies() {
+export function Skills() {
   const imagesFirstRowData = [
     { src: "/javascript-logo.svg", alt: "JavaScript", width: 70, height: 70 },
     { src: "/mongodb_1.svg", alt: "MongoDB", width: 70, height: 70 },
@@ -31,7 +31,7 @@ export function Technologies() {
         "flex relative  px-8 flex-col  py-10 w-full items-center justify-center "
       }
     >
-      <div className="  w-full pt-8 pb-2 flex items-center justify-center">
+      <div className="w-full pt-8 pb-2 flex items-center justify-center">
         <div className="relative inline-flex h-12 max-w-[350px] overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
@@ -39,7 +39,7 @@ export function Technologies() {
           </span>
         </div>
       </div>
-      <div className="pt-4   pb-16">
+      <div className="pt-4 pb-16">
         Building Innovative Apps with the Latest Technologies
       </div>
       <div className=" grid grid-rows-3 gap-y-8 items-center justify-center">

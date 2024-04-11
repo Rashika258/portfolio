@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from "react";
-import { Lamp } from "./_components/lamp";
+import { Lamp } from "../../components/ui/lamp";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import HeaderText from "@/components/ui/header-text";
 import { projects } from "@/components/data";

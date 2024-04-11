@@ -93,3 +93,9 @@
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+
+.vertical-timeline-element-content{
+  display: flex;
+  box-shadow: none !important;
+  height: 360px !important;
+}

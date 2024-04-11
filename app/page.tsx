@@ -2,11 +2,13 @@
 
 import HeroContent from "@/components/home/herocontent";
 
-import { Technologies } from "@/components/home/technologies";
 import { Navbar } from "@/components/ui/navbar";
 import { Projects } from "./projects/page";
 import { About } from "./about/page";
 import Footer from "@/components/ui/footer";
+import Experience from "./experience/page";
+import Education from "./education/page";
+import { Skills } from "./skills/page";
 
 
 export default function Home() {
@@ -16,9 +18,11 @@ export default function Home() {
 
       <div className="pt-[65px] flex flex-col">
         <HeroContent />
-        <Technologies />
+        <Skills />
         <About />
         <Projects />
+        <Experience />
+        <Education />
         <Footer />
       </div>
     </div>
