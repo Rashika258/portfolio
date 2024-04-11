@@ -1,11 +1,20 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { navItems } from "../data";
 
 const Navbar = () => {
+  const [selectedNav, setSelectedNav] = useState("Home");
+
   return (
     <nav className="w-full max-w-full min-w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 items-center justify-between ">
-      <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
+      <div
+        className=" flex flex-wrap items-center justify-between mx-auto p-4"
+        onClick={() => {
+          setSelectedNav("Home");
+        }}
+      >
         <Link href="/">
           <div className="logo__font text-3xl  font-bold text-yellowcolor">
             Rashika Suresh
@@ -44,7 +53,14 @@ const Navbar = () => {
                   return (
                     <li
                       key={idx}
-                      className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 group"
+                      className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+                        selectedNav === navItem?.navItem
+                          ? "bg-accent text-accent-foreground"
+                          : "bg-background text-default"
+                      } hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50`}
+                      onClick={() => {
+                        setSelectedNav(navItem?.navItem);
+                      }}
                     >
                       <Link href={navItem?.navLink}>{navItem?.navItem}</Link>
                     </li>
@@ -52,10 +68,26 @@ const Navbar = () => {
                 })}
             </ul>
 
-            <div className="p-[1px] relative">
+            <div
+              className="p-[1px] relative"
+              onClick={(e) => {
+                e?.stopPropagation();
+                setSelectedNav("Contact");
+              }}
+            >
               <Link href={"/contact"}>
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
-                <div className="px-8 py-2  bg-black rounded-full  relative group transition duration-200 text-white hover:bg-transparent">
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full ${
+                    selectedNav === "Contact" ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+                <div
+                  className={`px-8 py-2 bg-black rounded-full relative group transition duration-200 text-white hover:bg-transparent ${
+                    selectedNav === "Contact"
+                      ? "bg-gradient-to-r from-indigo-500 to-purple-500"
+                      : ""
+                  }`}
+                >
                   {"Let's talk"}
                 </div>
               </Link>
