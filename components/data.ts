@@ -26,9 +26,8 @@ export const aboutContent = `A tech wizard with a knack for turning complex code
 
 My journey into the world of software development started with a spark of curiosity and has evolved into a passion for creating digital magic. From building apps to optimizing processes, I thrive on the thrill of problem-solving and pushing boundaries.
 
-But I'm more than just a code ninja. I'm driven by [Your Values or Principles], championing [Something Important to You]. I believe in the power of [Your Belief or Principle], guiding me to [Your Unique Approach or Perspective].
-
-When I'm not immersed in the digital realm, you'll find me [Your Interests or Hobbies], [Something Personal or Quirky]. Whether it's [Your Passion or Interest], I'm always eager to dive into new adventures and make meaningful connections.`;
+My immersion in spirituality adds another layer to my journey, infusing every aspect of my life with meaning and purpose.
+When I'm not immersed in the digital realm, you'll find me indulging in my passions for riding, cooking, and sketching. There's something exhilarating about hitting the open road, feeling the wind rush past as I explore new destinations on my motorcycle. In the kitchen, I find solace in the art of cooking, experimenting with flavors and techniques to create culinary masterpieces that delight the senses. And when inspiration strikes, I turn to my sketchbook, where I unleash my creativity and imagination onto the blank pages, bringing my visions to life with each stroke of the pencil. Whether I'm cruising down winding roads, whipping up a gourmet meal, or capturing moments of beauty on paper, these hobbies enrich my life and fuel my spirit of adventure.`;
 
 export const firstHeroTextArray = [
   "Implementing innovative solutions for",
