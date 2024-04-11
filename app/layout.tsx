@@ -3,6 +3,7 @@ import { Inter, Sofia } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
+import MobileNavbar from "@/components/ui/mobile-navbar";
 
 const montserrat = Inter({ subsets: ["latin"] });
 
@@ -45,9 +46,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
-        <div className="flex flex-col h-full w-full overflow-x-hidden">
+        <div className="flex md:flex-col h-full w-full overflow-x-hidden">
           <Navbar />
           {children}
+          <MobileNavbar />
           <Footer/>
         </div>
       </body>

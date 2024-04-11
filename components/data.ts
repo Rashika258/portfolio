@@ -2,22 +2,32 @@ export const navItems = [
   {
     id:1,
     navItem:'Experience',
-    navLink:'/experience'
+    navLink:'/experience',
+    iconLink:'/mobile_experience.png'
   },
   {
     id:2,
     navItem:'About',
-    navLink:'/about'
+    navLink:'/about',
+    iconLink:'/mobile_about.png'
   },
   {
     id:3,
     navItem:'Skills',
-    navLink:'/skills'
+    navLink:'/skills',
+    iconLink:'/mobile_skills.png'
   },
   {
     id:4,
     navItem:'Projects',
-    navLink:'/projects'
+    navLink:'/projects',
+    iconLink:'/mobile_projects.png'
+  },
+  {
+    id:5,
+    navItem:'Education',
+    navLink:'/education',
+    iconLink:'/mobile_education.png'
   },
 ]
 
@@ -29,6 +39,8 @@ My journey into the world of software development started with a spark of curios
 My immersion in spirituality adds another layer to my journey, infusing every aspect of my life with meaning and purpose.
 When I'm not immersed in the digital realm, you'll find me indulging in my passions for riding, cooking, and sketching. There's something exhilarating about hitting the open road, feeling the wind rush past as I explore new destinations on my motorcycle. In the kitchen, I find solace in the art of cooking, experimenting with flavors and techniques to create culinary masterpieces that delight the senses. And when inspiration strikes, I turn to my sketchbook, where I unleash my creativity and imagination onto the blank pages, bringing my visions to life with each stroke of the pencil. Whether I'm cruising down winding roads, whipping up a gourmet meal, or capturing moments of beauty on paper, these hobbies enrich my life and fuel my spirit of adventure.`;
 
+
+export const heroWords = `I'm a seasoned Full Stack Software Engineer renowned for my ability to engineer dynamic solutions that transcend industry boundaries. With a meticulous focus on performance optimization, user experience enhancement, and security fortification, I excel in crafting robust digital experiences that leave a lasting impact.`
 export const firstHeroTextArray = [
   "Implementing innovative solutions for",
   "Creating scalable architectures for",

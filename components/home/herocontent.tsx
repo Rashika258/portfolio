@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { firstHeroSubTextArray, firstHeroTextArray } from "../data";
+import { firstHeroSubTextArray, firstHeroTextArray, heroWords } from "../data";
 import HeaderText from "../ui/header-text";
 
 const HeroContent = () => {
@@ -17,8 +17,8 @@ const HeroContent = () => {
   }, []);
 
   return (
-    <div className=" w-full h-full flex relative p-20 ">
-      <div className="flex hero__image__wrapper border border-slate-500 rounded-2xl shadow-lg ">
+    <div className=" w-full h-full flex md:items-center md:justify-center relative p-8 flex-col overflow-y-auto md:flex-row md:p-20 ">
+      <div className="hidden md:flex hero__image__wrapper relative border  border-slate-500 rounded-2xl shadow-lg ">
         <Image
           className="rounded-2xl"
           width={300}
@@ -28,7 +28,7 @@ const HeroContent = () => {
         />
       </div>
 
-      <div className=" py-8 px-16 flex flex-col items-center justify-center  w-[calc(100%-300px)]">
+      <div className=" md:py-8 md:px-16 flex flex-col md:items-center md:justify-center  md:w-[calc(100%-300px)]">
         <HeaderText text={"Full Stack Developer Portfolio"} />
 
         <div className="py-4 w-full  flex ">
@@ -43,8 +43,8 @@ const HeroContent = () => {
             </div>
           </div>
         </div>
-        <div className="text-gray-400 flex items-center text-justify py-8">
-          {`I'm a seasoned Full Stack Software Engineer renowned for my ability to engineer dynamic solutions that transcend industry boundaries. With a meticulous focus on performance optimization, user experience enhancement, and security fortification, I excel in crafting robust digital experiences that leave a lasting impact.`}
+        <div className="text-gray-400 flex items-center text-left md:text-justify py-8">
+          {heroWords}
         </div>
       </div>
     </div>
