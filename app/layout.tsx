@@ -3,6 +3,7 @@ import { Inter, Sofia } from "next/font/google";
 import "./globals.css";
 import ParticleCanvas from "@/components/home/Background";
 import Navbar from "@/components/ui/navbar";
+import Footer from "@/components/ui/footer";
 
 const montserrat = Inter({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function RootLayout({
         <div className="flex flex-col h-full w-full overflow-x-hidden">
           <Navbar />
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

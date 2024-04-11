@@ -1,9 +1,8 @@
+"use client"
+
 import * as React from 'react';
 
-export interface IContactProps {
-}
-
-export default function Contact (props: IContactProps) {
+export default function Contact () {
   return (
     <div className="">
     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="w-full max-w-full min-w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 items-center justify-between ">
       <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/docs" legacyBehavior passHref>
+        <Link href="/">
           <div className="logo__font text-3xl  font-bold text-yellowcolor">
             Rashika Suresh
           </div>
@@ -52,12 +52,14 @@ const Navbar = () => {
                 })}
             </ul>
 
-            <button className="p-[1px] relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
-              <div className="px-8 py-2  bg-black rounded-full  relative group transition duration-200 text-white hover:bg-transparent">
-                {"Let's talk"}
-              </div>
-            </button>
+            <div className="p-[1px] relative">
+              <Link href={"/contact"}>
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
+                <div className="px-8 py-2  bg-black rounded-full  relative group transition duration-200 text-white hover:bg-transparent">
+                  {"Let's talk"}
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

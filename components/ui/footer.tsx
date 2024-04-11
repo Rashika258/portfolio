@@ -2,9 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+      <footer className='h-[50px] bottom-0 fixed'>footer</footer>
   );
 }
 

@@ -42,7 +42,7 @@ const HeroContent = () => {
   }, []);
 
   return (
-    <div className=" w-full h-[700px] min-h-[700px] flex relative pt-16 px-20 pb-8 ">
+    <div className=" w-full h-[650px] min-h-[650px] flex relative pt-16 px-20 pb-8 ">
       <div className="flex items-center justify-center">
         <div className="flex ">
           <Image width={300} height={300} src={"/avatar_2.png"} alt="avatar" />

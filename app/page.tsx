@@ -12,7 +12,7 @@ import About from "./about/page";
 
 export default function Home() {
   return (
-    <div className="pt-[65px] flex flex-col">
+    <div className="pt-[65px] pb-[50px] h-full flex flex-col">
       <HeroContent />
       <Skills />
       <About />

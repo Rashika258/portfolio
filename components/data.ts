@@ -21,6 +21,19 @@ export const navItems = [
   },
 ]
 
+export const aboutWords = `Hey there! I'm Rashika!`;
+export const aboutContent = `A tech wizard with a knack for turning complex code into sleek solutions. With over 2 years of fulltime and 2 years of freelancing experience of coding adventures under my belt, I've mastered both frontend and backend technologies, bringing ideas to life.
+
+My journey into the world of software development started with a spark of curiosity and has evolved into a passion for creating digital magic. From building apps to optimizing processes, I thrive on the thrill of problem-solving and pushing boundaries.
+
+But I'm more than just a code ninja. I'm driven by [Your Values or Principles], championing [Something Important to You]. I believe in the power of [Your Belief or Principle], guiding me to [Your Unique Approach or Perspective].
+
+When I'm not immersed in the digital realm, you'll find me [Your Interests or Hobbies], [Something Personal or Quirky]. Whether it's [Your Passion or Interest], I'm always eager to dive into new adventures and make meaningful connections.
+
+Ready to collaborate on something extraordinary? Let's chat and [Your Call to Action]!
+
+This revamped "About Me" section adds a dash of personality and energy, inviting visitors to engage with your story and explore your capabilities further.`;
+
 export const projects = [
   {
     id: 1,
