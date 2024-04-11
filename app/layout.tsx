@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter,  Sofia } from "next/font/google";
+import { Inter, Sofia } from "next/font/google";
 import "./globals.css";
 import ParticleCanvas from "@/components/home/Background";
 import Navbar from "@/components/ui/navbar";
-
 
 const montserrat = Inter({ subsets: ["latin"] });
 
@@ -47,14 +46,10 @@ export default function RootLayout({
         className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
         <ParticleCanvas />
-
         <div className="flex flex-col h-full w-full overflow-x-hidden">
-      <Navbar />
-      
-      {children}
-  
-    </div>
-
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );

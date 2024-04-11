@@ -24,7 +24,7 @@ function Particles(props: IParticleCanvasProps) {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#FFB400"
+          color="#6012b3"
           size={0.002}
           sizeAttenuation={true}
           dethWrite={false}
