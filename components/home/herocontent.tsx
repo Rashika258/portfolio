@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { firstHeroSubTextArray, firstHeroTextArray, footerSocialLinks, heroWords } from "../data";
+import {
+  firstHeroSubTextArray,
+  firstHeroTextArray,
+  footerSocialLinks,
+  heroWords,
+} from "../data";
 import HeaderText from "../ui/header-text";
-import Footer from "../ui/footer";
 import Link from "next/link";
 
 const HeroContent = () => {
@@ -34,16 +38,14 @@ const HeroContent = () => {
         <HeaderText text={"Full Stack Developer Portfolio"} />
 
         <div className="py-4 w-full h-72 md:h-auto  flex flex-col text-4xl  font-bold  ">
-         
-            <div className="h-18 min-h-18 flex items-center  text-[#DAD5D5] justify-start p-2">
-              {firstHeroTextArray[index]}
-            </div>
+          <div className="h-18 min-h-18 flex items-center  text-[#DAD5D5] justify-start p-2">
+            {firstHeroTextArray[index]}
+          </div>
 
-            <div className="gradient__text h-18 min-h-18 flex items-center  justify-start p-2">
-              {" "}
-              {firstHeroSubTextArray[index]}
-            </div>
-          
+          <div className="gradient__text h-18 min-h-18 flex items-center  justify-start p-2">
+            {" "}
+            {firstHeroSubTextArray[index]}
+          </div>
         </div>
         <div className="text-gray-400 flex items-center text-left md:text-justify py-8">
           {heroWords}
@@ -51,7 +53,6 @@ const HeroContent = () => {
       </div>
 
       <div className="flex z-50 md:hidden">
-
         {footerSocialLinks &&
           footerSocialLinks?.length > 0 &&
           footerSocialLinks?.map((footerItem, idx) => {
@@ -72,8 +73,6 @@ const HeroContent = () => {
               </Link>
             );
           })}
-
-
       </div>
     </div>
   );

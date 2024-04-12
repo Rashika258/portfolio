@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const MobileNavbar = () => {
   return (
-    <div className="flex items-center justify-between p-4 w-full md:hidden bottom-0 z-50 fixed">
+    <div className="flex items-center justify-between footer__wrapper backdrop-blur-md p-4 w-full md:hidden bottom-0 z-50 fixed">
       {navItems &&
         navItems?.map((navItem, idx) => {
           return (
