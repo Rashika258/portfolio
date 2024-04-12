@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { firstHeroSubTextArray, firstHeroTextArray, heroWords } from "../data";
+import { firstHeroSubTextArray, firstHeroTextArray, footerSocialLinks, heroWords } from "../data";
 import HeaderText from "../ui/header-text";
+import Footer from "../ui/footer";
+import Link from "next/link";
 
 const HeroContent = () => {
   const [index, setIndex] = useState(0);
@@ -31,8 +33,8 @@ const HeroContent = () => {
       <div className=" md:py-8 md:px-16 flex flex-col md:items-center md:justify-center  md:w-[calc(100%-300px)]">
         <HeaderText text={"Full Stack Developer Portfolio"} />
 
-        <div className="py-4 w-full  flex ">
-          <div className="text-4xl  font-bold  ">
+        <div className="py-4 w-full h-72 md:h-auto  flex flex-col text-4xl  font-bold  ">
+         
             <div className="h-18 min-h-18 flex items-center  text-[#DAD5D5] justify-start p-2">
               {firstHeroTextArray[index]}
             </div>
@@ -41,11 +43,37 @@ const HeroContent = () => {
               {" "}
               {firstHeroSubTextArray[index]}
             </div>
-          </div>
+          
         </div>
         <div className="text-gray-400 flex items-center text-left md:text-justify py-8">
           {heroWords}
         </div>
+      </div>
+
+      <div className="flex z-50 md:hidden">
+
+        {footerSocialLinks &&
+          footerSocialLinks?.length > 0 &&
+          footerSocialLinks?.map((footerItem, idx) => {
+            return (
+              <Link
+                className="pr-4"
+                target="blank"
+                key={idx}
+                href={footerItem?.socialLink}
+              >
+                <Image
+                  className="hover:opacity-50"
+                  src={footerItem?.socialIcon}
+                  alt={footerItem?.socialName}
+                  width={30}
+                  height={30}
+                />
+              </Link>
+            );
+          })}
+
+
       </div>
     </div>
   );
