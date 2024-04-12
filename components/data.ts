@@ -88,6 +88,27 @@ export const footerSocialLinks = [
   },
 ]
 
+export const skillsFirstRowData = [
+  { src: "/javascript-logo.svg", alt: "JavaScript", width: 70, height: 70 },
+  { src: "/mongodb_1.svg", alt: "MongoDB", width: 70, height: 70 },
+  { src: "/mysql-official.svg", alt: "MySQL", width: 70, height: 70 },
+  { src: "/reactjs.svg", alt: "React.js", width: 70, height: 70 },
+];
+export const skillsSecondRowData = [
+  { src: "/expressjs.svg", alt: "Express.js", width: 70, height: 70 },
+  { src: "/nextjs.svg", alt: "Next.js", width: 70, height: 70 },
+  { src: "/nodejs_1.svg", alt: "Node.js", width: 70, height: 70 },
+
+  { src: "/java.svg", alt: "Java", width: 70, height: 70 },
+];
+
+export const skillsThirdRowData = [
+  { src: "/typescript.svg", alt: "TypeScript", width: 70, height: 70 },
+  { src: "/python.svg", alt: "Python", width: 40, height: 40 },
+  { src: "/html.svg", alt: "HTML5", width: 70, height: 70 },
+  { src: "/css.svg", alt: "CSS3", width: 70, height: 70 },
+];
+
 
 export const projects = [
   {
