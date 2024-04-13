@@ -1,35 +1,35 @@
 export const navItems = [
   {
-    id:1,
-    navItem:'Experience',
-    navLink:'/experience',
-    iconLink:'/mobile_experience.png'
+    id: 1,
+    navItem: "Experience",
+    navLink: "/experience",
+    iconLink: "/mobile_experience.png",
   },
   {
-    id:2,
-    navItem:'About',
-    navLink:'/about',
-    iconLink:'/mobile_about.png'
+    id: 2,
+    navItem: "About",
+    navLink: "/about",
+    iconLink: "/mobile_about.png",
   },
   {
-    id:3,
-    navItem:'Skills',
-    navLink:'/skills',
-    iconLink:'/mobile_skills.png'
+    id: 3,
+    navItem: "Skills",
+    navLink: "/skills",
+    iconLink: "/mobile_skills.png",
   },
   {
-    id:4,
-    navItem:'Projects',
-    navLink:'/projects',
-    iconLink:'/mobile_projects.png'
+    id: 4,
+    navItem: "Projects",
+    navLink: "/projects",
+    iconLink: "/mobile_projects.png",
   },
   {
-    id:5,
-    navItem:'Education',
-    navLink:'/education',
-    iconLink:'/mobile_education.png'
+    id: 5,
+    navItem: "Education",
+    navLink: "/education",
+    iconLink: "/mobile_education.png",
   },
-]
+];
 
 export const aboutWords = `Hey there! I'm Rashika!`;
 export const aboutContent = `A tech wizard with a knack for turning complex code into sleek solutions. With over 2 years of fulltime and 2 years of freelancing experience of coding adventures under my belt, I've mastered both frontend and backend technologies, bringing ideas to life.
@@ -39,8 +39,7 @@ My journey into the world of software development started with a spark of curios
 My immersion in spirituality adds another layer to my journey, infusing every aspect of my life with meaning and purpose.
 When I'm not immersed in the digital realm, you'll find me indulging in my passions for riding, cooking, and sketching. There's something exhilarating about hitting the open road, feeling the wind rush past as I explore new destinations on my motorcycle. In the kitchen, I find solace in the art of cooking, experimenting with flavors and techniques to create culinary masterpieces that delight the senses. And when inspiration strikes, I turn to my sketchbook, where I unleash my creativity and imagination onto the blank pages, bringing my visions to life with each stroke of the pencil. Whether I'm cruising down winding roads, whipping up a gourmet meal, or capturing moments of beauty on paper, these hobbies enrich my life and fuel my spirit of adventure.`;
 
-
-export const heroWords = `I'm a seasoned Full Stack Software Engineer renowned for my ability to engineer dynamic solutions that transcend industry boundaries. With a meticulous focus on performance optimization, user experience enhancement, and security fortification, I excel in crafting robust digital experiences that leave a lasting impact.`
+export const heroWords = `I'm a seasoned Full Stack Software Engineer renowned for my ability to engineer dynamic solutions that transcend industry boundaries. With a meticulous focus on performance optimization, user experience enhancement, and security fortification, I excel in crafting robust digital experiences that leave a lasting impact.`;
 export const firstHeroTextArray = [
   "Implementing innovative solutions for",
   "Creating scalable architectures for",
@@ -70,49 +69,70 @@ export const firstHeroSubTextArray = [
 export const footerSocialLinks = [
   {
     id: 1,
-    socialIcon:'/github.svg',
-    socialName:'github',
-    socialLink:'https://github.com/Rashika258'
+    socialIcon: "/github.svg",
+    socialName: "github",
+    socialLink: "https://github.com/Rashika258",
   },
   {
     id: 2,
-    socialIcon:'/linkedin.svg',
-    socialName:'linkedin',
-    socialLink:'https://www.linkedin.com/in/rashika-suresh/'
+    socialIcon: "/linkedin.svg",
+    socialName: "linkedin",
+    socialLink: "https://www.linkedin.com/in/rashika-suresh/",
   },
   {
     id: 3,
-    socialIcon:'/twitter.svg',
-    socialName:'twitter',
-    socialLink:'https://twitter.com/Rashika16735509'
+    socialIcon: "/twitter.svg",
+    socialName: "twitter",
+    socialLink: "https://twitter.com/Rashika16735509",
   },
-]
+];
+
+
 
 export const skillsFirstRowData = [
   { src: "/javascript-logo.svg", alt: "JavaScript", width: 50, height: 50 },
   { src: "/reactjs.svg", alt: "React.js", width: 50, height: 50 },
   { src: "/nextjs.svg", alt: "Next.js", width: 50, height: 50 },
   { src: "/expressjs.svg", alt: "Express.js", width: 50, height: 50 },
-
 ];
 export const skillsSecondRowData = [
   { src: "/typescript.svg", alt: "TypeScript", width: 50, height: 50 },
   { src: "/mongodb_1.svg", alt: "MongoDB", width: 50, height: 50 },
   { src: "/html.svg", alt: "HTML5", width: 50, height: 50 },
   { src: "/css.svg", alt: "CSS3", width: 50, height: 50 },
-
-
 ];
 
 export const skillsThirdRowData = [
   { src: "/nodejs_1.svg", alt: "Node.js", width: 70, height: 70 },
-
   { src: "/mysql-official.svg", alt: "MySQL", width: 70, height: 70 },
   { src: "/python.svg", alt: "Python", width: 40, height: 40 },
   { src: "/java.svg", alt: "Java", width: 50, height: 50 },
-  
 ];
 
+export const educationDetails = [
+  {
+    id:1,
+    schoolName:'BNM Institute of Technology - Visvesvaraya Technological University',
+    year:'2018 - 2022',
+    subTitle:'Aggregate - 9.6 CGPA',
+    description:'Bachelor of Engineering, Computer Science'
+  },
+  {
+    id:2,
+    schoolName:'Shri Chaitanya',
+    year:'2016 - 2018',
+    subTitle:'Result - 98%',
+    description:'PCMC, Department of Pre-University Education, Government of Karnataka'
+  },
+  {
+    id:3,
+    schoolName:'S J R Primary and High School',
+    year:'2007 - 2016',
+    subTitle:'Result - 98%',
+    description:'Karnataka Secondary Education Examination Board'
+  },
+
+]
 
 export const projects = [
   {
@@ -289,14 +309,14 @@ export const projects = [
   },
 ];
 
-export const experiences= [
+export const experiences = [
   {
     id: 1,
     companyName: "Sangoma Technologies",
     title: "Software Developer",
     workDescription: [],
     timeLineIcon: "/sangoma.png",
-    date:"2024 - Present"
+    date: "2024 - Present",
   },
   {
     id: 2,
@@ -308,7 +328,7 @@ export const experiences= [
       `Building server side of web applications, handling data storage, processing user inputs, and implementing business logic using MongoDB. `,
     ],
     timeLineIcon: "/hummingwave1.jpeg",
-    date:"2022 - 2024"
+    date: "2022 - 2024",
   },
   {
     id: 3,
@@ -320,6 +340,6 @@ export const experiences= [
       "Identified areas for improvemnet in the production environment, analyzed system performance and made improvements to software applications, infrastructure and processes.",
     ],
     timeLineIcon: "/gnani.png",
-    date:"2022 - 2022"
+    date: "2022 - 2022",
   },
 ];

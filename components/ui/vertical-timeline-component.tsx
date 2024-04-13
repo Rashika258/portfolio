@@ -1,8 +1,9 @@
 "use client"
-import { ThreeDCard } from "@/app/experience/page";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
+import { ThreeDCard } from "./3d-card-effect";
 
 interface ExperienceProps {
   id: number;

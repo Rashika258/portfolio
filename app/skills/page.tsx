@@ -9,6 +9,7 @@ import {
   skillsThirdRowData,
 } from "@/components/data";
 import HeaderText from "@/components/ui/header-text";
+import SubHeaderText from "../../components/ui/sub-header-text";
 
 interface ImageProp {
   src: string;
@@ -28,10 +29,9 @@ export default function Skills() {
         text={"Toolbox of Technical Mastery"}
         className="md:justify-center pt-0"
       />
-      <div className="pt-4 pb-8 whitespace-nowrap text-sm md:text-base flex w-full items-center justify-start md:justify-center">
-        Building Innovative Apps with the Latest Technologies
-      </div>
-      <div className=" grid grid-rows-3 gap-y-8 items-center justify-center">
+      <SubHeaderText text={'Building Innovative Apps with the Latest Technologies'} className="justify-start"/>
+
+      <div className=" grid grid-rows-3 w-full gap-y-8 items-center justify-start md:justify-center">
         <ImageWrapper images={skillsFirstRowData} />
         <ImageWrapper images={skillsSecondRowData} />
         <ImageWrapper images={skillsThirdRowData} />

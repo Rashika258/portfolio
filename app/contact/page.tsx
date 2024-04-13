@@ -1,17 +1,18 @@
 "use client";
 
 import HeaderText from "@/components/ui/header-text";
+import SubHeaderText from "@/components/ui/sub-header-text";
 import * as React from "react";
 
 export default function Contact() {
   return (
     <div className="h-[calc(100vh-145px)] w-full p-8 md:px-20 mt-[65px] mb-[80px] overflow-y-auto">
       <HeaderText text="Chat with me" className="md:justify-center pt-0" />
-      <div className="py-2 w-full flex items-center justify-start text-sm md:text-base md:justify-center">
-        Transforming ideas into captivating online experiences.
-      </div>
+      <SubHeaderText
+        text={"Transforming ideas into captivating online experiences."}
+      />
 
-      <form action="#" className="space-y-8 py-8">
+      <form action="#" className="space-y-8 py-8  max-w-xl">
         <div>
           <label
             htmlFor="email"

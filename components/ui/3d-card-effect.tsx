@@ -13,6 +13,15 @@ const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
 >(undefined);
 
+interface ExperienceProps {
+  id: number;
+  companyName: string;
+  title: string;
+  workDescription: string[];
+  timeLineIcon: string;
+  date: string;
+}
+
 export const CardContainer = ({
   children,
   className,
@@ -152,3 +161,34 @@ export const useMouseEnter = () => {
   }
   return context;
 };
+
+export function ThreeDCard({ experience }: { experience: ExperienceProps }) {
+  return (
+    <CardContainer className="inter-var">
+      <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem translateZ="50" className="text-xl font-bold  text-white">
+          {experience?.companyName}
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className=" text-sm max-w-sm mt-2 text-neutral-300"
+        >
+          {experience?.title}
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <div className="text-gray-400 py-6 text-sm">
+            <ul className="list-disc">
+              {experience?.workDescription &&
+                experience?.workDescription?.length > 0 &&
+                experience?.workDescription?.map((item, idx) => {
+                  return <li key={idx}>{item}</li>;
+                })}
+            </ul>
+          </div>
+        </CardItem>
+      </CardBody>
+    </CardContainer>
+  );
+}
+

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -23,56 +24,54 @@ const HeroContent = () => {
   }, []);
 
   return (
-    <div className=" w-full h-full flex md:items-center md:justify-center relative p-8 flex-col overflow-y-auto md:flex-row md:p-20 ">
-      <div className="hidden md:flex hero__image__wrapper relative border  border-slate-500 rounded-2xl shadow-lg ">
-        <Image
-          className="rounded-2xl"
-          width={300}
-          height={300}
-          src={"/avatar_2.png"}
-          alt="avatar"
-        />
-      </div>
-
-      <div className=" md:py-8 md:px-16 flex flex-col md:items-center md:justify-center  md:w-[calc(100%-300px)]">
-        <HeaderText text={"Full Stack Developer Portfolio"} />
-
-        <div className="py-4 w-full sm:h-52 md:h-auto  flex flex-col text-4xl  font-bold  ">
-          <div className="h-18 min-h-18 flex items-center  text-[#DAD5D5] justify-start p-2">
-            {firstHeroTextArray[index]}
+    <div className=" w-full mt-[65px] mb-[80px] h-[calc(100vh-145px)]   flex justify-start xl:items-center xl:justify-center relative p-8  flex-col   xl:p-20 ">
+      <div className="w-full flex">
+        <div className="hidden md:flex hero__image__wrapper relative border  border-slate-500 rounded-2xl shadow-lg ">
+          <img className="rounded-2xl" src={"/avatar_2.png"} alt="avatar" />
         </div>
 
-          <div className="gradient__text h-18 min-h-18 flex items-center  justify-start p-2">
-            {" "}
-            {firstHeroSubTextArray[index]}
+        <div className=" md:py-8 md:pl-16 flex flex-col md:items-center md:justify-center  ">
+          <HeaderText text={"Full Stack Developer Portfolio"}  className="md:justify-center pt-0" />
+
+          <p className="text-gray-400 flex items-center text-left py-8 ">
+            {heroWords}
+          </p>
+
+          <div className="flex w-full flex-col h-52">
+            <div className="py-4 w-full sm:h-52 md:h-auto  flex flex-col text-4xl  font-bold  ">
+              <p className="text-[#DAD5D5] ">
+                {firstHeroTextArray[index]}
+                <span className="gradient__text">
+                  {firstHeroSubTextArray[index]}
+                </span>
+              </p>
+            </div>
           </div>
+          <div className="flex z-50 md:hidden">
+          {footerSocialLinks &&
+            footerSocialLinks?.length > 0 &&
+            footerSocialLinks?.map((footerItem, idx) => {
+              return (
+                <Link
+                  className="pr-4"
+                  target="blank"
+                  key={idx}
+                  href={footerItem?.socialLink}
+                >
+                  <Image
+                    className="hover:opacity-50"
+                    src={footerItem?.socialIcon}
+                    alt={footerItem?.socialName}
+                    width={30}
+                    height={30}
+                  />
+                </Link>
+              );
+            })}
         </div>
-        <div className="text-gray-400 flex items-center text-left md:text-justify py-8">
-          {heroWords}
         </div>
-      </div>
 
-      <div className="flex z-50 md:hidden">
-        {footerSocialLinks &&
-          footerSocialLinks?.length > 0 &&
-          footerSocialLinks?.map((footerItem, idx) => {
-            return (
-              <Link
-                className="pr-4"
-                target="blank"
-                key={idx}
-                href={footerItem?.socialLink}
-              >
-                <Image
-                  className="hover:opacity-50"
-                  src={footerItem?.socialIcon}
-                  alt={footerItem?.socialName}
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            );
-          })}
+    
       </div>
     </div>
   );
