@@ -8,13 +8,13 @@ import { projects } from "@/components/data";
 
 export default function Projects() {
   return (
-    <div className="relative flex w-full p-20">
-      <div className="absolute w-full inset-0 mt-[-100px]">
+    <div className="relative flex  p-8 h-[calc(100vh-145px)] w-full  md:px-20 mt-[65px] mb-[80px] overflow-y-auto">
+      <div className="hidden md:block absolute w-full h-[calc(100vh-145px)]  inset-0 mt-[-215px]">
         <Lamp />
       </div>
-      <div className=" mt-[10rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden w-full">
-        <HeaderText text={"Projects"} />
-        <div className="pt-4  w-full flex items-center justify-center pb-16">
+      <div className=" md:mt-[2rem] rounded-md flex flex-col antialiased items-center md:justify-center relative overflow-hidden w-full">
+        <HeaderText text={"Projects"} className="md:justify-center pt-4" />
+        <div className="py-4 w-full flex items-center justify-center">
           Transforming ideas into captivating online experiences.
         </div>
         <InfiniteMovingCards items={projects} direction="right" speed="slow" />

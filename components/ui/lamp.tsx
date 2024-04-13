@@ -3,12 +3,10 @@ import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-
-
-export function Lamp( ) {
+export function Lamp() {
   return (
     <LampContainer>
-<></>
+      <></>
     </LampContainer>
   );
 }
@@ -23,7 +21,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#050609] w-full rounded-md z-0",
+        "relative hidden md:flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#050609] w-full rounded-md z-0",
         className
       )}
     >

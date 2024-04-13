@@ -60,7 +60,7 @@ const Navbar = () => {
                   }`}
                 />
                 <div
-                  className={`px-8 py-2 bg-black rounded-full relative group transition duration-200 text-white hover:bg-transparent ${
+                  className={`px-8 py-2 bg-black whitespace-nowrap rounded-full relative group transition duration-200 text-white hover:bg-transparent ${
                     selectedNav === "Contact"
                       ? "bg-gradient-to-r from-indigo-500 to-purple-500"
                       : ""

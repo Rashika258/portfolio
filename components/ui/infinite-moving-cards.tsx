@@ -71,7 +71,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -101,9 +101,8 @@ export const InfiniteMovingCards = ({
             key={item.id}
           >
             <div className="flex flex-col items-center">
-              
               <motion.div
-                className="w-full h-52  flex relative items-center justify-center"
+                className="w-full h-40  flex relative items-center justify-center"
                 initial={{ opacity: 0.6 }}
                 whileHover={{
                   scale: 1.2,
@@ -139,7 +138,7 @@ export const InfiniteMovingCards = ({
 
                 <div className="flex w-full py-2 items-center ">
                   <Link href={item?.githubLink} target="blank">
-                    <span  className=" text-sm mr-10 hover:text-gray-500 leading-[1.6] text-gray-100  underline font-normal">
+                    <span className=" text-sm mr-10 hover:text-gray-500 leading-[1.6] text-gray-100  underline font-normal">
                       Github
                     </span>
                   </Link>
