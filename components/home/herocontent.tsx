@@ -37,10 +37,10 @@ const HeroContent = () => {
       <div className=" md:py-8 md:px-16 flex flex-col md:items-center md:justify-center  md:w-[calc(100%-300px)]">
         <HeaderText text={"Full Stack Developer Portfolio"} />
 
-        <div className="py-4 w-full h-72 md:h-auto  flex flex-col text-4xl  font-bold  ">
+        <div className="py-4 w-full sm:h-52 md:h-auto  flex flex-col text-4xl  font-bold  ">
           <div className="h-18 min-h-18 flex items-center  text-[#DAD5D5] justify-start p-2">
             {firstHeroTextArray[index]}
-          </div>
+        </div>
 
           <div className="gradient__text h-18 min-h-18 flex items-center  justify-start p-2">
             {" "}

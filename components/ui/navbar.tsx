@@ -8,20 +8,20 @@ const Navbar = () => {
   const [selectedNav, setSelectedNav] = useState("Home");
 
   return (
-    <nav className="w-full max-w-full min-w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10 items-center justify-between ">
+    <nav className="w-full max-w-full flex min-w-full max-h-[65px] h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10 items-center justify-between ">
       <div
-        className=" flex flex-wrap items-center justify-between mx-auto p-4"
+        className=" flex w-full max-w-full min-w-full  items-center justify-between mx-auto p-4"
         onClick={() => {
           setSelectedNav("Home");
         }}
       >
         <Link href="/">
-          <div className="logo__font text-3xl  font-bold text-yellowcolor">
+          <div className="logo__font text-3xl  font-bold text-yellowcolor whitespace-nowrap">
             Rashika Suresh
           </div>
         </Link>
 
-        <div className="hidden w-full md:flex md:w-auto" id="navbar-default">
+        <div className="hidden md:flex items-center justify-center md:w-auto" id="navbar-default">
           <div className="flex">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  mr-10  border-gray-700">
               {navItems &&
@@ -45,7 +45,7 @@ const Navbar = () => {
                   );
                 })}
             </ul>
-
+            </div>
             <div
               className="p-[1px] relative"
               onClick={(e) => {
@@ -70,7 +70,7 @@ const Navbar = () => {
                 </div>
               </Link>
             </div>
-          </div>
+      
         </div>
       </div>
     </nav>
