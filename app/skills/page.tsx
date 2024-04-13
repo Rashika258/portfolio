@@ -26,7 +26,7 @@ export default function Skills() {
     >
       <HeaderText
         text={"Toolbox of Technical Mastery"}
-        className="justify-center pt-0"
+        className="md:justify-center pt-0"
       />
       <div className="pt-4 pb-8 whitespace-nowrap text-sm md:text-base flex w-full items-center justify-start md:justify-center">
         Building Innovative Apps with the Latest Technologies

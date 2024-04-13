@@ -24,7 +24,7 @@ export default function About() {
 
         <div
           className="
-            flex w-full py-4 text-gray-400 text-sm md:text-base text-left md:text-justify"
+            flex w-full py-4 text-gray-400 text-sm  text-left "
         >
           {aboutContent}
         </div>
