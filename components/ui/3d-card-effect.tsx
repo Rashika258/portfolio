@@ -176,6 +176,13 @@ export function ThreeDCard({ experience }: { experience: ExperienceProps }) {
         >
           {experience?.title}
         </CardItem>
+        <CardItem
+          as="p"
+          translateZ="60"
+          className=" mt-2 max-w-sm text-sm text-neutral-300"
+        >
+          {experience?.date}
+        </CardItem>
         <CardItem translateZ="100" className="mt-4 w-full">
           <div className="py-6 text-sm text-gray-400">
             <ul className="list-disc">
