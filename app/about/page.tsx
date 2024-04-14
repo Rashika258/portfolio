@@ -16,7 +16,7 @@ export default function About() {
         </DirectionAwareHoverCard>
       </div>
       <div className="flex flex-col items-center justify-center xl:py-10 xl:pl-20">
-        <HeaderText text="My story" className="r pt-0" />
+        <HeaderText text="My story" className=" pt-0" />
 
         <TextGenerateEffect words={aboutWords} className="w-full" />
         <SubHeaderText
@@ -25,7 +25,11 @@ export default function About() {
         />
 
         <div className="flex w-full py-4 text-left text-sm  text-gray-400 ">
-          <p>{aboutContent}</p>
+          <ul>{aboutContent && aboutContent?.length> 0 && aboutContent?.map((content, idx) =>{
+            return(
+              <li className="p-1" key={idx}>{content}</li>
+            )
+          })}</ul>
         </div>
       </div>
     </div>

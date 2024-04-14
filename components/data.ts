@@ -32,12 +32,12 @@ export const navItems = [
 ];
 
 export const aboutWords = `Hey there! I'm Rashika!`;
-export const aboutContent = `A tech wizard with a knack for turning complex code into sleek solutions. With over 2 years of fulltime and 2 years of freelancing experience of coding adventures under my belt, I've mastered both frontend and backend technologies, bringing ideas to life.
+export const aboutContent =[ `A tech wizard with a knack for turning complex code into sleek solutions. With over 2 years of fulltime and 2 years of freelancing experience of coding adventures under my belt, I've mastered both frontend and backend technologies, bringing ideas to life.`,
 
-My journey into the world of software development started with a spark of curiosity and has evolved into a passion for creating digital magic. From building apps to optimizing processes, I thrive on the thrill of problem-solving and pushing boundaries.
+`My journey into the world of software development started with a spark of curiosity and has evolved into a passion for creating digital magic. From building apps to optimizing processes, I thrive on the thrill of problem-solving and pushing boundaries.`,
 
-My immersion in spirituality adds another layer to my journey, infusing every aspect of my life with meaning and purpose.
-When I'm not immersed in the digital realm, you'll find me indulging in my passions for riding, cooking, and sketching. There's something exhilarating about hitting the open road, feeling the wind rush past as I explore new destinations on my cycle. In the kitchen, I find solace in the art of cooking, experimenting with flavors and techniques to create culinary masterpieces that delight the senses. And when inspiration strikes, I turn to my sketchbook, where I unleash my creativity and imagination onto the blank pages, bringing my visions to life with each stroke of the pencil.`;
+`My immersion in spirituality adds another layer to my journey, infusing every aspect of my life with meaning and purpose.`,
+`When I'm not immersed in the digital realm, you'll find me indulging in my passions for riding, cooking, and sketching. There's something exhilarating about hitting the open road, feeling the wind rush past as I explore new destinations on my cycle. `,`In the kitchen, I find solace in the art of cooking, experimenting with flavors and techniques to create culinary masterpieces that delight the senses. And when inspiration strikes, I turn to my sketchbook, where I unleash my creativity and imagination onto the blank pages, bringing my visions to life with each stroke of the pencil.`];
 
 export const heroWords = `I'm a seasoned Full Stack Software Engineer renowned for my ability to engineer dynamic solutions that transcend industry boundaries. With a meticulous focus on performance optimization, user experience enhancement, and security fortification, I excel in crafting robust digital experiences that leave a lasting impact.`;
 export const firstHeroTextArray = [
