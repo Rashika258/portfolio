@@ -304,7 +304,7 @@ export const projects = [
     githubLink: "https://github.com/Rashika258/Inshorts-Clone",
     title: "Inshorts Clone App",
     description: "Built using React, Express and Firebase",
-    imageUrl: "/restaurant.png",
+    imageUrl: "/inshorts.jpeg",
   },
 ];
 
