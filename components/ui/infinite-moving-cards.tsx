@@ -120,7 +120,7 @@ export const InfiniteMovingCards = ({
                   />
                 </Link>
               </motion.div>
-              <blockquote className="flex w-full flex-col items-start justify-start py-4">
+              <blockquote className="flex w-full flex-col items-center justify-center py-4">
                 <div
                   aria-hidden="true"
                   className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
@@ -136,7 +136,7 @@ export const InfiniteMovingCards = ({
                   </span>
                 </div>
 
-                <div className="flex w-full py-2 items-center ">
+                <div className="flex w-full py-2 items-center  justify-center">
                   <Link href={item?.githubLink} target="blank">
                     <span className=" text-sm mr-10 hover:text-gray-500 leading-[1.6] text-gray-100  underline font-normal">
                       Github

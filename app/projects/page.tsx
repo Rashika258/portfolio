@@ -13,9 +13,9 @@ export default function Projects() {
       <div className="hidden xl:block absolute w-full h-[calc(100vh-145px)]  inset-0 mt-[-215px]">
         <Lamp />
       </div>
-      <div className=" md:mt-[2rem] rounded-md flex flex-col antialiased items-center md:justify-center relative overflow-hidden w-full">
-        <HeaderText text={"Projects"} className="md:justify-center pt-4" />
-        <SubHeaderText text={' Transforming ideas into captivating online experiences.'} />
+      <div className=" xl:mt-[2rem] rounded-md flex flex-col antialiased items-center md:justify-center relative overflow-hidden w-full">
+        <HeaderText text={"Projects"} className="md:justify-center py-0 md:pt-4" />
+        <SubHeaderText text={' Transforming ideas into captivating online experiences.'} className="pb-0" />
         <InfiniteMovingCards items={projects} direction="right" speed="slow" />
       </div>
     </div>
