@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, Sofia } from "next/font/google";
+import { Inter, Montserrat, Sofia } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import MobileNavbar from "@/components/ui/mobile-navbar";
 
-const montserrat = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 const sofia = Sofia({
   weight: ["400"],
   variable: "--sofia",
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  weight: ["400"],
+  variable: "--montserrat",
   subsets: ["latin"],
 });
 
@@ -44,7 +50,7 @@ export default function RootLayout({
       />
       <link rel="manifest" href="/site.webmanifest"></link>
       <body
-        className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
+        className={`${inter.className} ${sofia.variable} ${montserrat.variable} h-[100vh] w-full overflow-x-hidden`}
       >
         <div className="flex h-full w-full flex-col overflow-x-hidden">
           <Navbar />

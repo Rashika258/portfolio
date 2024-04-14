@@ -49,7 +49,7 @@ const Navbar = () => {
                   return (
                     <li
                       key={idx}
-                      className={`group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-base font-medium transition-colors md:text-sm ${
+                      className={`group inline-flex h-10 w-max items-center justify-center rounded-md  text-base font-medium transition-colors md:text-sm ${
                         selectedNav === navItem?.navItem
                           ? "bg-accent text-accent-foreground"
                           : "text-default bg-background"
@@ -59,7 +59,9 @@ const Navbar = () => {
                         setSelectedNav(navItem?.navItem);
                       }}
                     >
-                      <Link href={navItem?.navLink}>{navItem?.navItem}</Link>
+                      <Link className="px-4 py-2" href={navItem?.navLink}>
+                        {navItem?.navItem}
+                      </Link>
                     </li>
                   );
                 })}
