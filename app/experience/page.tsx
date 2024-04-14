@@ -7,8 +7,8 @@ import VerticalTimelineComponent from "@/components/ui/vertical-timeline-compone
 
 export default function Experience() {
   return (
-    <div className="relative mb-[80px] mt-[65px] flex h-[calc(100vh-145px)] w-full   flex-col items-center   justify-center overflow-y-auto px-8">
-      <div className="flex h-full w-full flex-col">
+    <div className="relative mb-[80px] mt-[65px] flex h-[calc(100vh-145px)] w-full   flex-col items-center   justify-center overflow-y-auto p-8">
+      <div className="flex h-full w-full flex-col ">
         <HeaderText text="Experience" className="pt-0 md:justify-center" />
         <SubHeaderText
           text={`Charting the Map of Experience: Navigating Through Life's Terrain`}
