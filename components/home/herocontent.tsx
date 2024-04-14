@@ -24,7 +24,7 @@ const HeroContent = () => {
   }, []);
 
   return (
-    <div className=" relative mb-[80px] mt-[65px] flex   h-[calc(100vh-145px)] w-full flex-col justify-start p-8 xl:items-center  xl:justify-center   xl:p-20 ">
+    <div className=" relative mb-[80px] mt-[65px] flex   h-[calc(100vh-145px)] w-full flex-col justify-start p-8 md:items-center  md:justify-center   xl:p-20 ">
       <div className="flex w-full">
         <div className="hero__image__wrapper relative hidden rounded-2xl border  border-slate-500 shadow-lg md:flex ">
           <img

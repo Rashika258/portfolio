@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
 
       <div className="hidden text-sm text-slate-500  md:flex">
-        Copyright &#169; 2024
+      &#169; 2024 Made with ♥️ 
       </div>
 
       <div className="hidden  opacity-40 md:flex">
