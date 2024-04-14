@@ -309,14 +309,7 @@ export const projects = [
 ];
 
 export const experiences = [
-  // {
-  //   id: 1,
-  //   companyName: "Sangoma Technologies",
-  //   title: "Software Developer",
-  //   workDescription: [],
-  //   timeLineIcon: "/sangoma.png",
-  //   date: "2024 - Present",
-  // },
+
   {
     id: 2,
     companyName: "Hummingwave Technologies",
