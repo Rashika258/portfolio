@@ -87,8 +87,6 @@ export const footerSocialLinks = [
   },
 ];
 
-
-
 export const skillsFirstRowData = [
   { src: "/javascript-logo.svg", alt: "JavaScript", width: 50, height: 50 },
   { src: "/reactjs.svg", alt: "React.js", width: 50, height: 50 },
@@ -111,28 +109,29 @@ export const skillsThirdRowData = [
 
 export const educationDetails = [
   {
-    id:1,
-    schoolName:'BNM Institute of Technology - Visvesvaraya Technological University',
-    year:'2018 - 2022',
-    subTitle:'Aggregate - 9.6 CGPA',
-    description:'Bachelor of Engineering, Computer Science'
+    id: 1,
+    schoolName:
+      "BNM Institute of Technology - Visvesvaraya Technological University",
+    year: "2018 - 2022",
+    subTitle: "Aggregate - 9.6 CGPA",
+    description: "Bachelor of Engineering, Computer Science",
   },
   {
-    id:2,
-    schoolName:'Shri Chaitanya',
-    year:'2016 - 2018',
-    subTitle:'Result - 98%',
-    description:'PCMC, Department of Pre-University Education, Government of Karnataka'
+    id: 2,
+    schoolName: "Shri Chaitanya",
+    year: "2016 - 2018",
+    subTitle: "Result - 98%",
+    description:
+      "PCMC, Department of Pre-University Education, Government of Karnataka",
   },
   {
-    id:3,
-    schoolName:'S J R Primary and High School',
-    year:'2007 - 2016',
-    subTitle:'Result - 98%',
-    description:'Karnataka Secondary Education Examination Board'
+    id: 3,
+    schoolName: "S J R Primary and High School",
+    year: "2007 - 2016",
+    subTitle: "Result - 98%",
+    description: "Karnataka Secondary Education Examination Board",
   },
-
-]
+];
 
 export const projects = [
   {

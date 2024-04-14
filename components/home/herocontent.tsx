@@ -17,28 +17,31 @@ const HeroContent = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) =>
-        prevIndex === firstHeroTextArray?.length - 1 ? 0 : prevIndex + 1
+        prevIndex === firstHeroTextArray?.length - 1 ? 0 : prevIndex + 1,
       );
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className=" w-full mt-[65px] mb-[80px] h-[calc(100vh-145px)]   flex justify-start xl:items-center xl:justify-center relative p-8  flex-col   xl:p-20 ">
-      <div className="w-full flex">
-        <div className="hidden md:flex hero__image__wrapper relative border  border-slate-500 rounded-2xl shadow-lg ">
+    <div className=" relative mb-[80px] mt-[65px] flex   h-[calc(100vh-145px)] w-full flex-col justify-start p-8 xl:items-center  xl:justify-center   xl:p-20 ">
+      <div className="flex w-full">
+        <div className="hero__image__wrapper relative hidden rounded-2xl border  border-slate-500 shadow-lg md:flex ">
           <img className="rounded-2xl" src={"/avatar_2.png"} alt="avatar" />
         </div>
 
-        <div className=" md:py-8 md:pl-16 flex flex-col md:items-center md:justify-center  ">
-          <HeaderText text={"Full Stack Developer Portfolio"}  className="md:justify-center pt-0" />
+        <div className=" flex flex-col md:items-center md:justify-center md:py-8 md:pl-16  ">
+          <HeaderText
+            text={"Full Stack Developer Portfolio"}
+            className="pt-0 md:justify-center"
+          />
 
-          <p className="text-gray-400 flex items-center text-left py-8 ">
+          <p className="flex items-center py-8 text-left text-gray-400 ">
             {heroWords}
           </p>
 
-          <div className="flex w-full flex-col h-52">
-            <div className="py-4 w-full sm:h-52 md:h-auto  flex flex-col text-4xl  font-bold  ">
+          <div className="flex h-52 w-full flex-col">
+            <div className="flex w-full flex-col py-4  text-4xl font-bold sm:h-52  md:h-auto  ">
               <p className="text-[#DAD5D5] ">
                 {firstHeroTextArray[index]}
                 <span className="gradient__text">
@@ -47,31 +50,29 @@ const HeroContent = () => {
               </p>
             </div>
           </div>
-          <div className="flex z-50 md:hidden">
-          {footerSocialLinks &&
-            footerSocialLinks?.length > 0 &&
-            footerSocialLinks?.map((footerItem, idx) => {
-              return (
-                <Link
-                  className="pr-4"
-                  target="blank"
-                  key={idx}
-                  href={footerItem?.socialLink}
-                >
-                  <Image
-                    className="hover:opacity-50"
-                    src={footerItem?.socialIcon}
-                    alt={footerItem?.socialName}
-                    width={30}
-                    height={30}
-                  />
-                </Link>
-              );
-            })}
+          <div className="z-50 flex md:hidden">
+            {footerSocialLinks &&
+              footerSocialLinks?.length > 0 &&
+              footerSocialLinks?.map((footerItem, idx) => {
+                return (
+                  <Link
+                    className="pr-4"
+                    target="blank"
+                    key={idx}
+                    href={footerItem?.socialLink}
+                  >
+                    <Image
+                      className="hover:opacity-50"
+                      src={footerItem?.socialIcon}
+                      alt={footerItem?.socialName}
+                      width={30}
+                      height={30}
+                    />
+                  </Link>
+                );
+              })}
+          </div>
         </div>
-        </div>
-
-    
       </div>
     </div>
   );

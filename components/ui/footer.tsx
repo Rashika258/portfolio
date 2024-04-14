@@ -4,12 +4,10 @@ import Image from "next/image";
 import React from "react";
 import { footerSocialLinks } from "../data";
 import Link from "next/link";
-import MobileNavbar from "./mobile-navbar";
 
 const Footer = () => {
   return (
-    <footer className="h-[80px]  md:flex-row footer__wrapper backdrop-blur-md z-50 px-4  md:px-10 bottom-0 hidden md:flex items-center justify-between fixed w-full">
-    
+    <footer className="footer__wrapper  fixed bottom-0 z-50 hidden h-[80px]  w-full items-center justify-between px-4 backdrop-blur-md md:flex md:flex-row md:px-10">
       <div className="flex ">
         {footerSocialLinks &&
           footerSocialLinks?.length > 0 &&
@@ -33,9 +31,11 @@ const Footer = () => {
           })}
       </div>
 
-      <div className="hidden md:flex text-sm  text-slate-500">Copyright &#169; 2024</div>
+      <div className="hidden text-sm text-slate-500  md:flex">
+        Copyright &#169; 2024
+      </div>
 
-      <div className="opacity-40  hidden md:flex">
+      <div className="hidden  opacity-40 md:flex">
         <Link href={"/"}>
           <Image
             src={"/footer_logo.png"}

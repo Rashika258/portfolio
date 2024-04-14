@@ -57,8 +57,8 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          " flex items-center justify-center h-max",
-          containerClassName
+          " flex h-max items-center justify-center",
+          containerClassName,
         )}
         style={{
           perspective: "1000px",
@@ -70,8 +70,8 @@ export const CardContainer = ({
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
-            className
+            "relative flex items-center justify-center transition-all duration-200 ease-linear",
+            className,
           )}
           style={{
             transformStyle: "preserve-3d",
@@ -95,7 +95,7 @@ export const CardBody = ({
     <div
       className={cn(
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
-        className
+        className,
       )}
     >
       {children}
@@ -165,19 +165,19 @@ export const useMouseEnter = () => {
 export function ThreeDCard({ experience }: { experience: ExperienceProps }) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className=" group/card relative  h-auto w-auto rounded-xl border  border-white/[0.2] bg-black p-6 hover:shadow-2xl hover:shadow-emerald-500/[0.1] sm:w-[30rem]  ">
         <CardItem translateZ="50" className="text-xl font-bold  text-white">
           {experience?.companyName}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className=" text-sm max-w-sm mt-2 text-neutral-300"
+          className=" mt-2 max-w-sm text-sm text-neutral-300"
         >
           {experience?.title}
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
-          <div className="text-gray-400 py-6 text-sm">
+        <CardItem translateZ="100" className="mt-4 w-full">
+          <div className="py-6 text-sm text-gray-400">
             <ul className="list-disc">
               {experience?.workDescription &&
                 experience?.workDescription?.length > 0 &&
@@ -191,4 +191,3 @@ export function ThreeDCard({ experience }: { experience: ExperienceProps }) {
     </CardContainer>
   );
 }
-

@@ -46,11 +46,11 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} ${sofia.variable} h-[100vh] w-full overflow-x-hidden`}
       >
-        <div className="flex flex-col h-full w-full overflow-x-hidden">
+        <div className="flex h-full w-full flex-col overflow-x-hidden">
           <Navbar />
           {children}
           <MobileNavbar />
-          <Footer/>
+          <Footer />
         </div>
       </body>
     </html>

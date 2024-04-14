@@ -1,29 +1,28 @@
 "use client";
-
+import * as React from "react";
 import HeaderText from "@/components/ui/header-text";
 import SubHeaderText from "@/components/ui/sub-header-text";
-import * as React from "react";
 
 export default function Contact() {
   return (
-    <div className="h-[calc(100vh-145px)] w-full p-8 md:px-20 mt-[65px] mb-[80px] overflow-y-auto">
-      <HeaderText text="Chat with me" className="md:justify-center pt-0" />
+    <div className="mb-[80px] mt-[65px] h-[calc(100vh-145px)] w-full overflow-y-auto p-8 md:px-20">
+      <HeaderText text="Chat with me" className="pt-0 md:justify-center" />
       <SubHeaderText
         text={"Transforming ideas into captivating online experiences."}
       />
 
-      <form action="#" className="space-y-8 py-8  max-w-xl">
+      <form action="#" className="max-w-xl space-y-8  py-8">
         <div>
           <label
             htmlFor="email"
-            className="block mb-2 text-sm font-medium  text-gray-300"
+            className="mb-2 block text-sm font-medium  text-gray-300"
           >
             Your email
           </label>
           <input
             type="email"
             id="email"
-            className="shadow-sm  border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+            className="focus:ring-primary-500  focus:border-primary-500   focus:ring-primary-500 focus:border-primary-500 shadow-sm-light block w-full rounded-lg border border-gray-600 bg-gray-700 p-2.5 text-sm text-white placeholder-gray-400 shadow-sm"
             placeholder="name@flowbite.com"
             required
           />
@@ -31,14 +30,14 @@ export default function Contact() {
         <div>
           <label
             htmlFor="subject"
-            className="block mb-2 text-sm font-medium text-gray-300"
+            className="mb-2 block text-sm font-medium text-gray-300"
           >
             Subject
           </label>
           <input
             type="text"
             id="subject"
-            className="block p-3 w-full text-sm  rounded-lg border  shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+            className="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500  shadow-sm-light block  w-full rounded-lg border border-gray-600 bg-gray-700 p-3 text-sm text-white placeholder-gray-400 shadow-sm"
             placeholder="Let us know how we can help you"
             required
           />
@@ -46,19 +45,19 @@ export default function Contact() {
         <div className="sm:col-span-2">
           <label
             htmlFor="message"
-            className="block mb-2 text-sm font-medium text-gray-400"
+            className="mb-2 block text-sm font-medium text-gray-400"
           >
             Your message
           </label>
           <textarea
             id="message"
             rows={6}
-            className="block min-h-[50px] p-2.5 w-full text-sm rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 dark:placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 block min-h-[50px] w-full rounded-lg border border-gray-600 bg-gray-700 p-2.5 text-sm text-white shadow-sm dark:placeholder-gray-400"
             placeholder="Leave a comment..."
           ></textarea>
         </div>
 
-        <button className="px-4 py-2 backdrop-blur-sm border border-black rounded-full hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200">
+        <button className="rounded-full border border-black bg-white/[0.2] px-4 py-2 text-sm backdrop-blur-sm transition duration-200 hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)]">
           Send Message
         </button>
       </form>

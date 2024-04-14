@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -20,9 +20,9 @@ export default function VerticalTimelineComponent({
   experiences: ExperienceProps[];
 }) {
   return (
-    <div className="container border-gray-500 mb-10  rounded-3xl p-0 md:p-10 md:border w-full ">
-      <div className="relative wrap overflow-hidden  h-full">
-        <div className="border-2-2 absolute border-opacity-20 border-white h-full border left-4 md:left-[50%]"></div>
+    <div className="container mb-10 w-full  rounded-3xl border-gray-500 p-0 md:border md:p-10 ">
+      <div className="wrap relative h-full  overflow-hidden">
+        <div className="border-2-2 absolute left-4 h-full border border-white border-opacity-20 md:left-[50%]"></div>
 
         {experiences &&
           experiences?.length > 0 &&
@@ -38,8 +38,7 @@ export default function VerticalTimelineComponent({
       </div>
     </div>
   );
-};
-
+}
 
 const Timeline = ({
   experience,
@@ -51,16 +50,21 @@ const Timeline = ({
   return (
     <div
       className={cn(
-        "mb-8 flex justify-start md:justify-between items-center w-full",
-        className
+        "mb-8 flex w-full items-center justify-start md:justify-between",
+        className,
       )}
     >
       <div className="order-1  md:w-5/12"></div>
-      <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-        <Image height={32} width={32} className="rounded-full" src={experience?.timeLineIcon} alt={experience?.companyName} />
-        
+      <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
+        <Image
+          height={32}
+          width={32}
+          className="rounded-full"
+          src={experience?.timeLineIcon}
+          alt={experience?.companyName}
+        />
       </div>
-      <div className="order-1 shadow-xl ml-10 md:ml-0 md:w-5/12 w-9/12 ">
+      <div className="order-1 ml-10 w-9/12 shadow-xl md:ml-0 md:w-5/12 ">
         <ThreeDCard experience={experience} />
       </div>
     </div>

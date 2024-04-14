@@ -1,16 +1,15 @@
 "use client";
-
+import * as React from "react";
 import { experiences } from "@/components/data";
 import HeaderText from "@/components/ui/header-text";
 import SubHeaderText from "@/components/ui/sub-header-text";
 import VerticalTimelineComponent from "@/components/ui/vertical-timeline-component";
-import React from "react";
 
 export default function Experience() {
   return (
-    <div className="h-[calc(100vh-145px)] w-full relative mt-[65px] mb-[80px] flex   px-8 flex-col   items-center justify-center overflow-y-auto">
-      <div className="flex h-full flex-col w-full">
-        <HeaderText text="Experience"  className="md:justify-center pt-0" />
+    <div className="relative mb-[80px] mt-[65px] flex h-[calc(100vh-145px)] w-full   flex-col items-center   justify-center overflow-y-auto px-8">
+      <div className="flex h-full w-full flex-col">
+        <HeaderText text="Experience" className="pt-0 md:justify-center" />
         <SubHeaderText
           text={`Charting the Map of Experience: Navigating Through Life's Terrain`}
         />

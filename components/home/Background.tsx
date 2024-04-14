@@ -12,7 +12,7 @@ function Particles(props: IParticleCanvasProps) {
   const [sphere] = React.useState(() =>
     random.inSphere(new Float32Array(5000), {
       radius: 1.2,
-    })
+    }),
   );
 
   useFrame((state, delta) => {
@@ -36,7 +36,7 @@ function Particles(props: IParticleCanvasProps) {
 
 export default function ParticleCanvas() {
   return (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
+    <div className="fixed inset-0 z-[20] h-auto w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <React.Suspense fallback={null}>
           <Particles />

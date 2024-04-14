@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { navItems } from "../data";
 import Image from "next/image";
@@ -5,7 +7,7 @@ import Link from "next/link";
 
 const MobileNavbar = () => {
   return (
-    <div className="flex items-center justify-between footer__wrapper backdrop-blur-md p-4 w-full md:hidden bottom-0 z-50 fixed">
+    <div className="footer__wrapper fixed bottom-0 z-50 flex w-full items-center justify-between p-4 backdrop-blur-md md:hidden">
       {navItems &&
         navItems?.map((navItem, idx) => {
           return (
