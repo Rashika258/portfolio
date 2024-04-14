@@ -24,7 +24,7 @@ const HeroContent = () => {
   }, []);
 
   return (
-    <div className=" relative mb-[80px] mt-[65px] flex   h-[calc(100vh-145px)] w-full flex-col justify-start p-8 md:items-center  md:justify-center   xl:p-20 ">
+    <div className=" relative mb-[80px] mt-[65px] flex   h-[calc(100vh-145px)] w-full flex-col justify-start p-8 md:items-center  md:justify-center overflow-y-auto  xl:p-20 ">
       <div className="flex w-full">
         <div className="hero__image__wrapper relative hidden rounded-2xl border  border-slate-500 shadow-lg md:flex ">
           <img
@@ -43,12 +43,12 @@ const HeroContent = () => {
           </Link>
   
 
-          <p className="flex items-center py-8 text-left text-gray-400 ">
+          <p className="flex items-center py-8 text-sm md:text-base text-left text-gray-400 ">
             {heroWords}
           </p>
 
           <div className="flex h-52 w-full flex-col">
-            <div className="flex w-full flex-col py-4  text-4xl font-bold sm:h-52  md:h-auto  ">
+            <div className="flex w-full flex-col py-4 text-2xl md:text-4xl font-bold sm:h-52  md:h-auto  ">
               <p className="text-[#DAD5D5] ">
                 {firstHeroTextArray[index]}
                 <span className="gradient__text">
