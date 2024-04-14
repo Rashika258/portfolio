@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="mb-[80px] mt-[65px] h-[calc(100vh-145px)] w-full overflow-y-auto p-8 md:px-20">
       <HeaderText text="Chat with me" className="pt-0 md:justify-center" />
       <SubHeaderText
-        text={"Transforming ideas into captivating online experiences."}
+        text={"Reach Out: Let's Start Your Journey Together"}
       />
 
       <div className="flex w-full items-center justify-center py-8">

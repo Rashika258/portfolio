@@ -11,7 +11,7 @@ export default function Experience() {
       <div className="flex h-full w-full flex-col ">
         <HeaderText text="Experience" className="pt-0 md:justify-center" />
         <SubHeaderText
-          text={`Charting the Map of Experience: Navigating Through Life's Terrain`}
+          text={`Charting the Map of Experience: Navigating Through Life's Milestones`}
         />
         <div className="flex w-full  xl:px-20 ">
           <VerticalTimelineComponent experiences={experiences} />

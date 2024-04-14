@@ -30,7 +30,7 @@ export default function Skills() {
         className="pt-0 md:justify-center"
       />
       <SubHeaderText
-        text={"Building Innovative Apps with the Latest Technologies"}
+        text={"Pushing Boundaries with the Latest Technologies"}
         className="justify-start"
       />
 
